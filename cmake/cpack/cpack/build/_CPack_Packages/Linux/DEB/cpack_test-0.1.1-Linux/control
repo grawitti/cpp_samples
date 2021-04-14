@@ -1,0 +1,9 @@
+Architecture: 
+Description: cpack_test built using CMake
+Maintainer: TEST
+Package: cpack_test
+Priority: optional
+Section: devel
+Version: 0.1.1
+Installed-Size: 4
+

@@ -1,0 +1,4 @@
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step7/build/_CPack_Packages/Linux/TZ/Tutorial-1.0-Linux/bin/Tutorial
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step7/build/_CPack_Packages/Linux/TZ/Tutorial-1.0-Linux/include/TutorialConfig.h
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step7/build/_CPack_Packages/Linux/TZ/Tutorial-1.0-Linux/lib/libMathFunctions.a
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step7/build/_CPack_Packages/Linux/TZ/Tutorial-1.0-Linux/include/MathFunctions.h

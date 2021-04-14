@@ -1,0 +1,3 @@
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step1/buildir/CMakeFiles/rebuild_cache.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step1/buildir/CMakeFiles/Tutorial.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step1/buildir/CMakeFiles/edit_cache.dir

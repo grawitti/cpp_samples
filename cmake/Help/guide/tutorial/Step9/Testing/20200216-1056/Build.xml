@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-c++"
+	BuildStamp="20200216-1056-Experimental"
+	Name="ruslan"
+	Generator="ctest-3.16.3"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="9.2.0"
+	OSName="Linux"
+	Hostname="ruslan"
+	OSRelease="5.4.15-2-MANJARO"
+	OSVersion="#1 SMP PREEMPT Mon Jan 27 17:27:50 UTC 2020"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="17"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="6962"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2223.48"
+	>
+	<Build>
+		<StartDateTime>Feb 16 15:56 +05</StartDateTime>
+		<StartBuildTime>1581850572</StartBuildTime>
+		<BuildCommand>/usr/bin/cmake --build . --config "Release"</BuildCommand>
+		<Log Encoding="base64" Compression="bin/gzip"/>
+		<EndDateTime>Feb 16 15:56 +05</EndDateTime>
+		<EndBuildTime>1581850572</EndBuildTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Build>
+</Site>

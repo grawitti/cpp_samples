@@ -1,0 +1,16 @@
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/CMakeFiles/install/strip.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/CMakeFiles/install/local.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/CMakeFiles/test.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/CMakeFiles/Tutorial.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/CMakeFiles/rebuild_cache.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/CMakeFiles/edit_cache.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/CMakeFiles/install.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/CMakeFiles/list_install_components.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/MathFunctions/CMakeFiles/install/strip.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/MathFunctions/CMakeFiles/install/local.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/MathFunctions/CMakeFiles/test.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/MathFunctions/CMakeFiles/MathFunctions.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/MathFunctions/CMakeFiles/edit_cache.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/MathFunctions/CMakeFiles/rebuild_cache.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/MathFunctions/CMakeFiles/install.dir
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step4/buildir/MathFunctions/CMakeFiles/list_install_components.dir

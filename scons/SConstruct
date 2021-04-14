@@ -1,0 +1,66 @@
+# -*- coding: utf-8 -*-
+
+# Создание среды env
+env = Environment()
+
+# Распечатать все значения среды
+#for item in sorted(env.Dictionary().items()):
+#	print("construction variable = '%s', value = '%s'" %item)
+
+print("CCCOM is: %s"%env['CCCOM'])
+print("CCCOM is: %s"%env.subst('CCCOM'))
+
+print("Пример сборки в scons.")
+
+# Список общих исходников
+common_srcs = Split('class_a.cpp class_b.cpp')
+
+# Сборка статической библиотеки
+#Library('common', common_srcs)
+#StaticLibrary('common', common_srcs)
+SharedLibrary('common', common_srcs)
+
+#Создаём список исходных файлов для цели
+main_srcs = common_srcs + ['main.cpp']
+
+# Создание списка исходников с помощью метода Split.
+# Split создаёт список из строки разделеной пробельными символами 
+main_split_srcs = Split('class_a.cpp class_b.cpp main.cpp')
+
+# Создаём список исходных файлов с помощью функции Glob
+# Glob находит все файлы соответсвующие заданному шаблону.
+# Напимер: *.cpp все файлы с расширением .cpp
+main_glob_srcs = Glob('*.cpp')
+
+# Создание объектных файлов и компановка в заданную целевую программу
+# main - имя программы
+# main_srcs - список исходных файлов .c .cpp ...
+#Program('main', main_split_srcs)
+
+# Можно явно указать что цель что исходник используя ключевые слова
+# target и source
+main = env.Program(target = 'main', source = main_srcs)
+
+#Decider('timestamp-newer') # Отслеживание изменений по штампу времени изменения make
+#Decider('MD5') # Отслеживание изменений по MD5 можно использовать алиаc: content
+Decider('MD5-timestamp') # Отслеживание изменений по MD5 и времени изменения
+
+print("The main is: %s" %main)
+
+env=Environment(VAR="value")
+main_path=File("main.cpp")
+print(env.GetBuildPath([main_path, "test/$VAR"]))
+
+import os.path
+main_str = str(main[0]) # переводит список в строку
+if not os.path.exists(main_str):
+	print("%s does not exists!" %main_str)
+
+# исходники для сборки second_main
+second_srcs = ['second.cpp']
+
+#Program('second_main', second_srcs, CPPDEFINES=['DEBUG'])
+second = Program('second_main', second_srcs, LIBS=['common'], LIBPATH='.', parse_flags='-DDEBUG')
+
+# Метод Object создаст только объектные файлы .o или .obj
+#Object('test.cpp')

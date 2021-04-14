@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step9/TutorialConfig.h
+
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step9/tutorial.cxx
+cmath
+-
+iostream
+-
+string
+-
+TutorialConfig.h
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step9/TutorialConfig.h
+MathFunctions.h
+/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step9/MathFunctions.h
+
+MathFunctions/MathFunctions.h
+

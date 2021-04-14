@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-c++"
+	BuildStamp="20200216-1056-Experimental"
+	Name="ruslan"
+	Generator="ctest-3.16.3"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="9.2.0"
+	OSName="Linux"
+	Hostname="ruslan"
+	OSRelease="5.4.15-2-MANJARO"
+	OSVersion="#1 SMP PREEMPT Mon Jan 27 17:27:50 UTC 2020"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="17"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="6962"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2501.18"
+	>
+	<Configure>
+		<StartDateTime>Feb 16 15:56 +05</StartDateTime>
+		<StartConfigureTime>1581850572</StartConfigureTime>
+		<ConfigureCommand>"/usr/bin/cmake" "/home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step9"</ConfigureCommand>
+		<Log>-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ruslan/Examples/cxx/cmake/Help/guide/tutorial/Step9
+</Log>
+		<ConfigureStatus>0</ConfigureStatus>
+		<EndDateTime>Feb 16 15:56 +05</EndDateTime>
+		<EndConfigureTime>1581850572</EndConfigureTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Configure>
+</Site>
