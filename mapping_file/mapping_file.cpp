@@ -37,11 +37,11 @@ int main (int argc, char **argv)
                                               pattern,
                                               ":");
 
-
-  std::string big_string = "hieufheiufhu\n iusefieubiebv\n iueiubiub\n iuiub iuhieuh iuhiuseiubi iuh ibiu iu iuh iuh iuh iuhi hiuehfsehfosiie se iuheivueviubiesb iseiu esiuvbisuebiub iseui esiu iuvsbuiebibeibeisubsiohsuheiushei ius ebviubevuibiubesielsue sieu hsiueh iuseh isueh isueh isue isebiusiusbe iusbe uiseb isueb seiu bsieu b...";
-
-  memcpy(contents, (char*)new_string.c_str(),new_string.size());
+  // std::string big_string = "hieufheiufhu\n iusefieubiebv\n iueiubiub\n iuiub iuhieuh iuhiuseiubi iuh ibiu iu iuh iuh iuh iuhi hiuehfsehfosiie se iuheivueviubiesb iseiu esiuvbisuebiub iseui esiu iuvsbuiebibeibeisubsiohsuheiushei ius ebviubevuibiubesielsue sieu hsiueh iuseh isueh isueh isue isebiusiusbe iusbe uiseb isueb seiu bsieu b...";
   // memcpy(contents, (char*)big_string.c_str(), big_string.size());
+
+  memcpy(contents, (char*)new_string.c_str(), new_string.size());
+
   printf("out contents: %s\n", contents);
 
   munmap(contents, st.st_size);
