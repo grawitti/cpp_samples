@@ -1,4 +1,5 @@
 #include <regex>
+#include <iostream>
 
 #include <stdio.h>
 #include <sys/mman.h>
@@ -28,6 +29,9 @@ int main (int argc, char **argv)
                         fd, 0);
 
   printf("File contents: %s\n", contents);
+
+  std::cout << "regex_search: " << std::boolalpha
+            << std::regex_search(contents, pattern) << std::endl;
 
   std::string new_string = std::regex_replace(contents,
                                               pattern,
