@@ -15,7 +15,7 @@ int main (int argc, char **argv)
   }
 
   const char *file_name = argv[1];
-  const std::regex pattern("[\\!]");
+  const std::regex pattern(R"([.])");
 
   int fd = -1;
   fd = open(file_name, O_RDWR);
@@ -35,7 +35,7 @@ int main (int argc, char **argv)
 
   std::string new_string = std::regex_replace(contents,
                                               pattern,
-                                              "?");
+                                              ":");
 
 
   std::string big_string = "hieufheiufhu\n iusefieubiebv\n iueiubiub\n iuiub iuhieuh iuhiuseiubi iuh ibiu iu iuh iuh iuh iuhi hiuehfsehfosiie se iuheivueviubiesb iseiu esiuvbisuebiub iseui esiu iuvsbuiebibeibeisubsiohsuheiushei ius ebviubevuibiubesielsue sieu hsiueh iuseh isueh isueh isue isebiusiusbe iusbe uiseb isueb seiu bsieu b...";
