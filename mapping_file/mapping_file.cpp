@@ -6,13 +6,13 @@
 #include <unistd.h>  
 #include <fcntl.h>
 
-#define MAX_FILE_SIZE 1024
-
 int main (int argc, char **argv)
 {
-  if (!argc) {
+  if (argc < 2) {
+    printf("Error: File name not defined");
     return -1;
   }
+
   const char *file_name = argv[1];
   const std::regex pattern("[\\!]");
 
