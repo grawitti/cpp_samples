@@ -1,0 +1,11 @@
+# /opt/novella_ctl/misc/ntp.conf, configuration for ntpd; see ntp.conf(5) for help
+
+# Path to drift file. By default: /var/lib/ntp/ntp.drift
+driftfile /var/lib/ntp/ntp.drift
+
+# Server NTP IP(master ip) for slave or 127.127.1.0 for master
+server 127.127.1.0 iburst prefer minpoll 3
+
+# Access control configuration
+# By default, exchange time with everybody, but don't allow configuration.
+restrict default kod notrap nomodify noquery limited
