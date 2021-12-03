@@ -27,7 +27,7 @@ void search(const char* name, Graph& graph)
 	person = search_queue.front();
 	search_queue.pop_front();
 
-	if (searched.find(person) == searched.end()) {
+	if (!searched[person]) {
 	    if (person_is_seller(person)) {
 		cout << person << " is mango seller" << endl;
 		return;
