@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include "random/random.cpp"
+#include "../../random/random.cpp"
 using namespace std;
 
 vector<int> quick_sort(const vector<int>& v)
@@ -13,6 +13,7 @@ vector<int> quick_sort(const vector<int>& v)
 		int pivot = v[0];
 		vector<int> less;
 		vector<int> greater;
+
 		for (size_t i = 1; i < v.size(); i++) {
 			if (v[i] <= pivot) {
 				less.push_back(v[i]);
@@ -21,14 +22,14 @@ vector<int> quick_sort(const vector<int>& v)
 				greater.push_back(v[i]);
 			}
 		}
+
 		less    = quick_sort(less);
 		greater = quick_sort(greater);
 
 		vector<int> res{less.begin(), less.end()};
-
 		res.push_back(pivot);
-
 		res.insert(res.end(), greater.begin(), greater.end());
+
 		return res;
 	}
 }
@@ -46,7 +47,7 @@ void print_vector(const vector<T>& v)
 int main()
 {
 	vector<int> v;
-	int max = 1000000;
+	int max = 100;
 	for (int i = 0; i < max; i++) {
 	    v.push_back(get_random(max));
 	}
