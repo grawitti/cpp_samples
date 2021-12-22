@@ -10,20 +10,20 @@ int binary_search(vector<int>& list, int item)
 
     int i = 0;
     while (low <= high) {
-	cout << ++i << endl;
-	int mid = (low + high);
-	int guess = list.at(mid);
+		cout << ++i << endl;
+		int mid = (low + high) / 2;
+		int guess = list.at(mid);
 
-	if (guess == item) {
-	    return mid;
-	}
+		if (guess == item) {
+			return mid;
+		}
 
-	if (guess > item) {
-	    high = mid - 1;
-	}
-	else {
-	    low = mid + 1;
-	}
+		if (guess > item) {
+			high = mid - 1;
+		}
+		else {
+			low = mid + 1;
+		}
     }
     
     return -1;
