@@ -10,10 +10,9 @@
  * элемента из оригинального массива.
  *
  * Создаём новый массив и добавляем в него минимальный элемент
- * из не отсортированного массива и одноаременно удаляем этот
+ * из не отсортированного массива и одновременно удаляем этот
  * элемент из не отсортированного массива пока в нем не останется
  * элементов.
- *
  */
 
 using namespace std;
@@ -33,10 +32,10 @@ uint find_smallest(const vector<int>& vec)
     uint smallest_index = 0;
 
     for (uint i = 0; i < vec.size(); i++) {
-	if (vec[i] < smallest) {
-	    smallest = vec[i];
-	    smallest_index = i;
-	}
+        if (vec[i] < smallest) {
+            smallest = vec[i];
+            smallest_index = i;
+        }
     }
 
     return smallest_index;
@@ -47,9 +46,9 @@ vector<int> selection_sort(vector<int>& vec)
     vector<int> new_vec;
 
     while (vec.size() >= 1) {
-	uint smallest_index = find_smallest(vec);
-	new_vec.push_back(vec[smallest_index]);
-	vec.erase(vec.begin() + smallest_index);
+        uint smallest_index = find_smallest(vec);
+        new_vec.push_back(vec[smallest_index]);
+        vec.erase(vec.begin() + smallest_index);
     }
     
     return new_vec;
@@ -60,7 +59,7 @@ int main()
     int max = 1000000;
     vector<int> vec;
     for (int i = 0; i < max; i++) {
-	vec.push_back(get_random(max));
+        vec.push_back(get_random(max));
     }
     cout << "original vector: ";
     print_vec(vec);
